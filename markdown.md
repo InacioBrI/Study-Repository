@@ -1,6 +1,6 @@
 # **O que é Markdown e suas funcionalidade**.
 
-![texto](/Images/1681137344178.jpeg)
+![texto](/Images/BannerMD.jpeg)
 
 ## O que é o MarkDown?
 
@@ -15,17 +15,40 @@ Usar o Markdown, tem suas diferentes vantagens de se desfrutar-se e sendo totalm
 Usando o Vscode (Visual Studio Code) criaremos um aquivo com o nome: ``README.md``, podemos notar que README que é um arquivo que contem inofrmações sobre outros arquivos está ligado ao ``.md``
 que é a extensão do Markdown, para que o arquivo *README*  sejá um arquivo Markdown. 
 
+## Como funciona o Markdown
+
+O Markdown veio para facilitar a compreensão na escrita, por tanto, par Markdown funciona ele irá por quatro estagio.
+
+![Markdown](/Images/Como-funrunfa.png)
+
 ## Funcionalidade do Markdown:
 
 ### Titulação
 #### Para produzir titulos, basta apenas você o  
 
 ````
+# Titulo H1
 
+## Titulo H2
+
+### Titulo H3
+
+#### Titulo H4
+
+##### Titulo H5
+
+###### Titulo H6 
 
 ````
+#### e abaixo você poderar ver como é vistualizado
 
+# Titulo H1
+## Titulo H2
+### Titulo H3
+#### Titulo H4 
+##### Titulo H5
+###### Titulo H6
 
-
+Assim fechamos todos os titulos utilizados no Markdown.
 
 
