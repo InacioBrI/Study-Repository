@@ -51,4 +51,143 @@ O Markdown veio para facilitar a compreensão na escrita, por tanto, par Markdow
 
 Assim fechamos todos os titulos utilizados no Markdown.
 
+## O Markdown tem algumas formatações que são bem utilizada sendo elas:
+
+### ***Itálico*** tendo duas formas de ser feita.
+
+````
+
+*Itálico*
+----------
+_Itálico_
+
+````
+
+### **Negrito** também contendo duas formas de ser feita.
+
+````
+
+**Itálico**
+----------
+__Itálico__
+
+````
+
+### Existe uma forma de juntas os dois **Itálico e Negrito**.
+
+````
+
+***Itálico***
+----------
+___Itálico___
+
+````
+
+### **~~Riscado~~**
+
+````
+
+~~Riscado~~
+
+````
+
+### **``Destaque``**
+
+````
+
+``Destaque``
+
+````
+
+### **Link** tendo duas formas de ser feita, sendo um com texto ancora e outro apenas o link direto.
+
+### **`Com texto ancora`** 
+
+[Texto](https://github.com/InacioBrI)
+
+````
+
+[Texto](https://github.com/InacioBrI)
+
+````
+
+### **`Apenas Link Direto`**
+
+<https://github.com/InacioBrI>
+
+````
+
+<https://github.com/InacioBrI>
+
+````
+
+### Adicionar imagem, que tem a semelhança ao criar um link, veja bem abaixo:
+
+![Titulo da imagem](https://i.ytimg.com/vi/75n91rq-9Ro/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCdwTl1OK4-4juqbFQv-BKQSgkurQ)
+***COM O LINK***
+
+O legal é que você pode colocar tanto quanto link, como também por imagem baixadas e estando em seu arquivo.
+
+![Titulo da imagem](/Images/zoro.jpg)
+***NO ARQUIVO***
+
+irei mostrar as duas formas feitas:
+
+### Com o link
+
+````
+
+![Titulo da imagem](www.link-Da-Sua-foto)
+
+
+````
+### No Arquivo
+
+````
+
+![Titulo da imagem](/Images/zoro.jpg)
+
+
+````
+
+### No Markdown você também pode fazer Listagem, da seguinte forma: 
+``Também contendo duas forma de ser feita.``
+utilizando `*` e `-`
+
+- Lista
+- Lista
+* Lista
+* Lista
+
+````
+- Lista
+- Lista
+
+* Lista
+* Lista
+
+````
+
+#### temos as listas numerada sendo ainda mais facil, normalmente usado em lista de compra.
+
+**1. Pão de Alho**
+
+**2. Refrigerante**
+
+**3. Carne**
+
+E assim foi feita uma lista para um belo ``CHURRASCO``
+Sendo a forma de ser feita assim:
+
+
+````
+
+1. Pão de Alho
+
+2. Refrigerante
+
+3. Carne
+
+`````
+**AVISO:** ``Não esqueça de sempre dar um espaço entre eles.``
 
