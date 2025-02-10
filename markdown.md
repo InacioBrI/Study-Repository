@@ -192,3 +192,28 @@ Sendo a forma de ser feita assim:
 #### **AVISO:** ``Não esqueça de sempre dar um espaço entre eles.``
 
 ### Paragrafo (Blockquote)
+
+Para usar o "paragrafo" com Blockquote no Markdown, basta apenas utilizar o ``>`` no começo do texto emq eu você quer inserir. 
+
+> Paragrado 1
+
+> Paragrado 2
+
+> Paragrado 3
+
+### CheckBox
+
+Sabe aquelas caixinhas de marcações que geralmente usamos para marcar tarefas feitas, ou até mesmo, provas ou questões de alternativa, no Markdown, também é possivel.
+
+![Checkbox](https://as1.ftcdn.net/jpg/01/99/52/22/1000_F_199522246_N0hLlmnfe8Gn6TlMhSlNSt4wjxStr6o4.jpg)
+
+#### Vamos fazer da seguinte forma:
+
+````
+[x]  Resposta Certa
+[ ] Resposta Errada
+[ ] Resposta Errada
+
+````
+Não esqueça do espaço entre os caracteres, quando completar sua tarefa ou resposta correta, basta só colocar um x entre os colchetes.
+
