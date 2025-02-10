@@ -217,3 +217,35 @@ Sabe aquelas caixinhas de marcações que geralmente usamos para marcar tarefas 
 ````
 Não esqueça do espaço entre os caracteres, quando completar sua tarefa ou resposta correta, basta só colocar um x entre os colchetes.
 
+### E por fim, temos as Tabelas.
+No Markdown, suas tabelas terão que ser desenhadas mas relaxa, não é um bicho de sete cabeças e eu vou mostrar isso agora:
+
+Vamos utilizar duas coisas:
+
+``|`` Para as as colunas
+``-`` Para as vidisorias 
+
+O exemplo em que irei utilizar, será numa lista de supermercado.
+
+````
+Lista de Compra
+---------|---------
+1.Compra | R$ 10,00
+         |
+2.Compra | R$ 5,90
+         |
+3.Compra | R$ 7,00
+         |
+````
+
+### ``Resultado``
+
+Lista    | Compras
+---------|---------
+1.Compra | R$ 10,00
+2.Compra | R$ 5,90
+3.Compra | R$ 7,00
+
+#### **Enfim**, aqui se encerra um pequeno aprendizado do que é Markdown e suas Funcionalidades, Des de já, agradeço pela compreensão e por ler esse artivo feito por mim, para estudos.
+
+![Tchau](https://animeportifolio.wordpress.com/wp-content/uploads/2015/09/gallery_207_22_118033.gif)
