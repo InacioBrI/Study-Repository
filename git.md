@@ -95,4 +95,24 @@ No entanto, o uso da emulação de um sistema ``**Linux**`` tinha impacto na per
 
 Tendo isso em mente, muitos ``comandos do Git``, inicialmente escritos em Shell Script, foram reescritos na ``linguagem C``, que resultou em ganho de performance em plataformas que não usam o **Shell Script como linguagem de linha de comando oficial**, como é o caso do **Windows**.
 
+## Conceitos fundamentais do Git
+
+### Repositórios, commits e árvores (Trees)
+
+Um **``repositório``** é como uma pasta ou diretório que contém todos os arquivos e o histórico de um projeto.
+
+Já o **``Commmit``**, como havia dito, sua tradução literal é de "Compromisso", que seria uma ação em que você faz uma alteração no projeto, se compromete a salva suas alterações no historico do projeto.
+
+Sendo assim, cada `Commit` é uma entrada no historico que contem informações sobre as alterações feitas.
+
+**``Árvores``**, por ultimo, representando a estrutura do diretório e arquivos em um Commit especifico, que tem como função registrar a organização do projeto ao longo do historico de desenvolvimento.
+
+## Ramificação ``(Branches)`` e Fusões ``(Merges)``
+
+As ``“ramificações”`` ou ``branches`` permitem que você crie **linhas separadas** **de desenvolvimento** para trabalhar em recursos ou correções **sem afetar a linha principal do projeto**.
+
+Cada **branch** é uma ``ramificação`` independente do código-fonte, possibilitando que você **isole** e **desenvolva** **novas funcionalidades**, refatore o código ou faça correções e testes em paralelo, sem interferir no código existente na ``branch principal``, que geralmente é nomeada como ``"main"``.
+
+Em um **projeto com branches diferentes**, a ``fusão``, ou ``merge``, permite combinar as alterações dessas branches de volta à linha principal, quando as alterações estão prontas.
+
 ## Principais comandos do GIT?

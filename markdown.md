@@ -170,11 +170,9 @@ utilizando `*` e `-`
 
 #### temos as listas numerada sendo ainda mais facil, normalmente usado em lista de compra.
 
-**1. Pão de Alho**
-
-**2. Refrigerante**
-
-**3. Carne**
+1. Pão de Alho
+2. Refrigerante
+3. Carne
 
 E assim foi feita uma lista para um belo ``CHURRASCO``
 Sendo a forma de ser feita assim:
