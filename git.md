@@ -6,6 +6,8 @@
 
 Git é basicamente um sistema que registra o historico de alteração feita no seu projeto. que certamente facilita o acompanhamento e a recupera modificações.
 
+Um famoso Controle de versão **``VCS``**
+
 ## Para que Serve o Git?
 
 Para entender melhor o Git, vamos pensar na seguinte situação:
@@ -34,7 +36,7 @@ Precisamos manter o ``historico`` dos nossos arquivos e das nossas modificaçõe
 
  Desta forma, podemos voltar atrás e **``recuperar o estado do sitema``**: como ele era antes, para comparar mudanças ou até mesmo para identificar ``bugs`` e ``estudar otimizações``.
 
-## Como funciona o GIT e qais são as vantagens?
+## Como funciona o GIT e quais são as vantagens?
 
 Como o Git guarda todas as informações?
 
@@ -115,4 +117,60 @@ Cada **branch** é uma ``ramificação`` independente do código-fonte, possibil
 
 Em um **projeto com branches diferentes**, a ``fusão``, ou ``merge``, permite combinar as alterações dessas branches de volta à linha principal, quando as alterações estão prontas.
 
+
+## Versões
+![alt text](image.png)
+
 ## Principais comandos do GIT?
+
+### **Buscar ajuda sobre comandos git**
+Ele mostra uma lista de comandos do git
+````
+git help
+````
+e se caso você queira mostrar sobre algum git especifico basta apenas você fazer isso:
+````
+git help commit
+````
+
+### **Criar novo repositorio**
+````
+git init
+````
+
+### **Adicionar arquivo/diretório**
+Adicionar todos os arquivos/diretório
+````
+git add .
+````
+
+### **Comitar um Arquivo/diretório**
+Você vai commitar todas as alteraçõesw
+````
+git commit -m ""
+````
+
+### **Remover diretorio**
+````
+git rm -r diretorio 
+````
+
+### **Clonar um repositorio**
+````
+git clone git@github.com:leocomelli/curso-git.git
+````
+Obs: git@github.com:leocomelli/curso-git.git - 
+``é onde fica o repositorio que você quer colocar``
+
+### **Atualizar os arquivos no branch atual**
+Ele atualiza a sua branch para a versão mais recente do codigo.
+````
+git pull
+````
+
+### **Buscar as alterações, mas não aplica-las no branch atual**
+Busca todas as alterações que ainda não foram colocadas na sua branch 
+````
+git fetch
+````
+
