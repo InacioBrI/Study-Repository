@@ -174,3 +174,7 @@ Busca todas as alterações que ainda não foram colocadas na sua branch
 git fetch
 ````
 
+### Enviar Para o Repositório 
+````
+git push
+````
