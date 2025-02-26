@@ -1,6 +1,7 @@
-# O que é ``GIT`` e suas principais funcionalidades.
 
-![alt text](/Images/Git.png)
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bz1kjbrlttuif4vvlcxc.png)
+
+O que é ``GIT`` e suas principais funcionalidades.
 
 ## O que é o GIT?
 
@@ -24,7 +25,8 @@ Muitas pessoas que entraram no mundo da programação, viu o GIT e o GitHub, e a
 
 São ferramentas ``totalmente diferente``, mas trabalhando juntos fazem um ótimo desenvolvimento e uma total diferença no seu projeto, tanto na questão de ``eficiencia`` quanto na ``velocidade``.
 
-![alt text](/Images/GIT&GITHUB.png)
+
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rroicej4pb00ox3tq7i0.png)
 
 ## Para que serve o GIT?
 
@@ -119,62 +121,64 @@ Em um **projeto com branches diferentes**, a ``fusão``, ou ``merge``, permite c
 
 
 ## Versões
-![alt text](image.png)
 
 ## Principais comandos do GIT?
 
 ### **Buscar ajuda sobre comandos git**
 Ele mostra uma lista de comandos do git
-````
+```
 git help
-````
+```
 e se caso você queira mostrar sobre algum git especifico basta apenas você fazer isso:
-````
+```
 git help commit
-````
+```
 
 ### **Criar novo repositorio**
-````
+```
 git init
-````
+```
 
 ### **Adicionar arquivo/diretório**
 Adicionar todos os arquivos/diretório
-````
+```
 git add .
-````
+```
 
 ### **Comitar um Arquivo/diretório**
 Você vai commitar todas as alteraçõesw
-````
+```
 git commit -m ""
-````
+```
 
 ### **Remover diretorio**
-````
+```
 git rm -r diretorio 
-````
+```
 
 ### **Clonar um repositorio**
-````
+```
 git clone git@github.com:leocomelli/curso-git.git
-````
+```
 Obs: git@github.com:leocomelli/curso-git.git - 
 ``é onde fica o repositorio que você quer colocar``
 
 ### **Atualizar os arquivos no branch atual**
 Ele atualiza a sua branch para a versão mais recente do codigo.
-````
+```
 git pull
-````
+```
 
 ### **Buscar as alterações, mas não aplica-las no branch atual**
 Busca todas as alterações que ainda não foram colocadas na sua branch 
-````
+```
 git fetch
-````
+```
 
 ### Enviar Para o Repositório 
-````
+```
 git push
-````
+```
+
+# agora pare de choramingar.
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vk8gizng4rq6utze23wa.png)
