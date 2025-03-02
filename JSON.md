@@ -74,7 +74,7 @@ Mas aqui podemos ver que a criação do JSON é bem simples, basicamente uma est
 }
 ```
 
-{``Outro exemplo``}
+(``Outro exemplo``)
 
 ```
 
