@@ -194,5 +194,5 @@ echo $json;
 
 Mas por fim esse é o Json, ele recolhe dados do usuarios ou dados, deu pra perceber que ele não é um bicho de 300 cabeça é só uma, então agradeço de já a sua leitura e por favor, não enche o meu ``saco``.
 
-![alt text](image.png)
+![alt text](/Images/image.png)
 

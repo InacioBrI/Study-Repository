@@ -4,4 +4,4 @@
 
 - [x] Markdown - Arquivo de estudo
 - [ ] Comando do Basicos Terminal
-- [ ] Git
+- [x] Git
