@@ -17,3 +17,5 @@ Então, caso a pessoa quisesse navegar nos diretórios (pastas) atrás de um arq
 Existem vários programas que emulam um Terminal. Geralmente, os Sistemas Operacionais já vêm com algum, mas nada impede que a usuária possa instalar e usar outro de sua preferência.
 
 O Terminal também é conhecido pelos nomes Console, Prompt de Comando ou CLI, do inglês command-line interface (interface de linha de comando).
+
+Apenas isso, muito obrigado!
