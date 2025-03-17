@@ -51,36 +51,22 @@ O cabeçalho é o local para se passar informações adicionais sobre a ``requis
 2. ``CABEÇALHO DE REQUISIÇÃO`` 
 3. ``CABEÇALHO DE ENTIDADE`` 
 
+#### Campos:
+A quantidade de campos que tem é muito grande, mas vou colocar aqui, os mais usado:
 
+* ``DATE`` - Informa da data do envio da requisição
+* ``CACHE-CONTROL`` - Envia diretivos para o mecanismo de Cache
+* ``TRANSFER-ENCODING`` - Especidica a forma de decodificar o corpo da requisição
+* ``COOKIE`` - Envia informações sobre os Cookies
+* ``Accept`` - Especifica a preferencia de resposta
+* ``User-Agent`` - Envia informações sobre o client
 
 #### 3. Corpo/Mensagem
+O corpo nada mais é do que os dados da sua requisição.<br>
+``Exemplo:`` em um envio de formulario HTML, ficaria no corpo as informações desse formulario.
 
-### http//
+Exemplo:
+![alt text](/Images/PostHTTP.png)
 
-Em navegadores da internet como Chrome e Safari, um endereço Web é prefixado por ``http://``. Este prefixo instrui o navegador da Web a comunicar pelo protocolo HTTP, um exemplo:
 
-```
-
-http://google.com
-
-```
-
-## Etapas que acontecem com o HTTP
-
-### 1. Etapa - Navegação e inicio
-
-O usuario deve-se diriger para endeteço IP da Web em um navegador ou clicar em um link simple email ou de comunicação. A URL também tem dominio. O navegador localiza o endereço da Web com uma  pesquisa de DNS ``(Sistema  de nomes de Dominio)`` e em seguida, envia a solicitação para o endereço 
-
-### 2. Etapa - ``cliente``envia uma mensagem de solicitação HTTP ao servidor 
-
-``cliente``TTP, por exemplo, o navegador, constroi uma mensagem de solicitação que é direicionada para o servidor Web do Google. A primeira linha de mensagem de solicitação HTTP identidica a pagina raiz do site ou seja da o famoso ``GET``
-
-### 3. Etapa - O servidor Web do Google envia a respota HTTP de volta para cliente
-
-Assim que o servidor da Web do Google recebe a solicitação, uma mensagem de respota criada e retornada para o ``cliente`` 
-A primeira linha da mensagem inclui o codigo de resposta "200" OK para indicar que o servidor Web pode responder à solicitação com exito.
-
-### Quais codigo podem aparecer na resposta:
-
-* 404 - Não Encontrado
-* 503 - Servidor Indisponivel
+## Mas afinal qual, qual request pode nos retornar?
