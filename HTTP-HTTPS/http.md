@@ -69,4 +69,55 @@ Exemplo:
 ![alt text](/Images/PostHTTP.png)
 
 
-## Mas afinal qual, qual request pode nos retornar?
+## Mas afinal qual, qual é o formato do Resquest?
+
+O formato do resquest ele é composto por trés unidades, sendo elas:
+
+* Linha de estatus 
+* Cabeçalho
+* Corpo
+
+
+### 1. Linha de Status - Tendo trés informações.
+* Versão do protocolo.
+* codigo numerico do status.<br>
+* Texto Associado ao Status. 
+
+#### Uma das informações mais importante é:
+Codigo de Status.<br> sendo eles: <br>
+1XX - pedido ``Information`` serviço ainda em processo<br>
+2XX - ``Success``, pedido recebido com sucesso.<br>
+3XX - ``Redirection`` Ações adicionais precisam ser realizada para terminaer o serviço<br>
+4XX - ``Client Error`` Pedido com informações incorretas ou não existe.<br>
+5XX - ``Server Error`` Não processou seu pedido.<br>
+
+Existe alguns que são muito conhecidos, portanto eles são:
+
+* 404 - Not Found
+* 301 - Moved permanently
+* 500 - internal Server Error
+* 200 - Ok
+
+### 2. Cabeçalho<br>
+Sendo ele bem parecido com o cabeçalho do pedido, sendo assim terá informações sobre o pedido e conteudo de resposta, irei dar alguns exemplo:
+
+* ``Content-Type``<br>
+Tipo de conteudo que foi enviado no resquest0
+
+* ``Access-Control-Allow``<br>
+indica se a resposta pode ser acessavel pela origem do pedido.
+
+* ``Date``<br>
+Data de respota que foi gerada.
+
+### 3. Corpo<br>
+Basicamente a mensagem que navegador que o navegador vai interprestar, pode ser:
+
+``HTML``
+``JSON``
+ou
+``XML``
+
+Aqui vou dar um exemplo de resposta vindo do servidor:
+
+![alt text](/Images/HTTP-Resposta.png)
