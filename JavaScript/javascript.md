@@ -4,15 +4,14 @@
 
 #### aqui irei te ensinar do zero até o avançado sobre JavaScript, e que você consiga fazer sozinho suas proprias funções.
 
-## Módulo 1 Fundamentos do JavaScript
+# 🧠 Módulo 1 Fundamentos do JavaScript
 ### 1. O que é JavaScript?
 * Javascript é uma linguagem de programação interpretada de alto nivel.
 * Criada em 1955 por Brendan Eich em apenas `` 10 dias``, **loucura né**
 * Inicialmente era usada para fazer apenas paginas Web interativas, mas hoje em dia é usada para até fazer ``Servidores``,``Desktop``,``Mobile``,``Lot``,``Inteligencia Artificial``
 
 ## Quer saber uma curiosidade?
-``O
- roda no navegador por meio de um "motor" (engine).``
+``Roda no navegador por meio de um "motor" (engine).``
 
 * ``Chrome`` → ``V8 Engine``
 
@@ -31,7 +30,7 @@
 
 ##### ``JavaScript:`` comportamento (o cérebro da página)
 
-## Módulo 2 - Tipos de dados e Operadores. 
+# 🛠️ Módulo 2 - Tipos de dados e Operadores. 
 ``Objetivo: Entender como o JavaScript armazena e manipula as informações.``
 
 ### Tipos Primitivos
@@ -147,7 +146,7 @@ function calcularTotal(preco, quantidade) {
 console.log(calcularTotal(299.99, 3));
 ```
 
-## Modulo 3 - Variavel, Constantes e Escopos.
+# 📚 Modulo 3 - Variavel, Constantes e Escopos.
 ``Objetivo: Aprender a guardar informações e contolar onde elas vivem.``
 
 ``Var``, ``Let`` e ``const``
@@ -268,12 +267,13 @@ criarUsuario();
 💡``Numa empresa: Protege variáveis locais para não ter conflito de nomes em diferentes partes do sistema.``
 
 ## 🔹 Hoisting → "içamento"
-Só ``var`` sofre hoisting completo, ``let``/``const`` não!`
+Só ``var`` sofre hoisting completo, ``let``/``const`` não!
 
 ```
 console.log(nome); // undefined (por causa do hoisting)
 var nome = "Carlos";
 ```
+
 ```
 // console.log(preco); // ERRO (não sofre hoisting)
 let preco = 300;
@@ -303,12 +303,13 @@ function processarPedido(pedido) {
 const pedidoCliente = { id: 123, valor: 1500 };
 processarPedido(pedidoCliente);
 ```
+
 💡``Numa empresa: Funções grandes que precisam tratar vários cenários sem deixar as variáveis "vazarem" para onde não devem.``
 
 # 📈 Resumo Visual
-![palavraChave](image.png)
+![palavraChave](/JavaScript/resumo3.png)
 
-## 📚 MÓDULO 4 — Controle de Fluxo em JavaScript
+# 📚 MÓDULO 4 — Controle de Fluxo em JavaScript
 
 ### Controle de fluxo = ``dizer ao código "o que fazer em cada situação".``
 **Tipo: "se isso acontecer → faça isso, se não → faça aquilo".**
@@ -459,7 +460,7 @@ processarPedidos(listaPedidos);
 
 💡 ``Numa empresa: Esse tipo de fluxo seria usado pra processar filas de pedidos num sistema de vendas ou logística.``
 
-## Modulo 5 - Funções em JavaScript
+# Modulo 5 - Funções em JavaScript
 **Objetivo**: Modularizar (separar) e reutilizar código em várias partes do programa.
 
 ### 🧩 Tipos de Funções
@@ -487,3 +488,225 @@ console.log(somar(5, 3)); // 8
 💡 ``Numa empresa: Guardar funções em variáveis pra depois passar elas como parâmetros (muito usado em eventos ou filtros).``
  
 ### 🔹 3. Arrow Functions → Função moderna (mais curta)
+
+```
+const multiplicar = (a, b) => a * b;
+
+console.log(multiplicar(4, 5)); // 20
+```
+💡 ``Numa empresa: Usada direto em APIs, sistemas em React, manipulação rápida de listas (arrays).``
+
+# 🧠 Conceitos Importantes
+
+### 🔸 ``Parameters x Arguments``
+
+* **Parameters = nomes definidos na criação da função.**
+
+* **Arguments = valores passados quando a função é chamada.**
+
+```
+function apresentar(nome) { // parâmetro: nome
+  console.log(`Olá, ${nome}!`);
+}
+
+apresentar("Lucas"); // argumento: "Lucas"
+```
+💡 ``Numa empresa: Cadastro de novos usuários enviando nome, email, senha via função.``
+
+---
+
+### 🔸 Escopo de Função
+``Cada função cria o seu próprio "mundinho" de variáveis.``
+
+```
+function testeEscopo() {
+  const segredo = "1234";
+  console.log(segredo); // OK: dentro da função
+}
+
+testeEscopo();
+// console.log(segredo); // Erro: fora da função
+```
+💡 ``Numa empresa: Manter dados sensíveis escondidos (ex: tokens de sessão, validações internas).``
+
+---
+
+### 🔸 Closure (Fechamento de Escopo)
+``Função lembra do lugar onde foi criada, mesmo depois de ser chamada fora dele.``
+
+```
+function criarContador() {
+  let contador = 0;
+
+  return function() {
+    contador++;
+    console.log(contador);
+  };
+}
+
+const contador1 = criarContador();
+contador1(); // 1
+contador1(); // 2
+contador1(); // 3
+```
+💡 ``Numa empresa: Gerenciar estado interno sem deixar exposto (ex: contador de visitas, tempo de sessão do usuário).``
+
+---
+
+## 🎯 Exemplo Real com Tudo Junto:
+```
+function criarSistemaDeLogin(usuarioCorreto, senhaCorreta) {
+  return function(usuario, senha) {
+    if (usuario === usuarioCorreto && senha === senhaCorreta) {
+      return "Login realizado com sucesso!";
+    } else {
+      return "Usuário ou senha incorretos.";
+    }
+  };
+}
+
+const login = criarSistemaDeLogin("admin", "1234");
+
+console.log(login("admin", "1234")); // Login realizado com sucesso!
+console.log(login("admin", "0000")); // Usuário ou senha incorretos.
+```
+💡 ``Numa empresa: Sistema de autenticação, mantendo a senha protegida dentro da função inicial.```
+
+# Resumo Modulo 5
+
+![alt text](/JavaScript/resumoModulo5.png)
+
+### ⚡Observação importante:
+
+#### 🔸 ``Arrow Functions`` NÃO têm seu próprio this → Isso muda como você usa dentro de classes ou objetos!
+
+#### 🔸``losures`` são MUITO usadas para criar funções "privadas" no JavaScript moderno.
+
+# 🗄️ Modulo 6 - Objetos Arrays
+**Objetivo**: Trabalhar com grupos de dados de forma organizada.
+
+### 📦 Objetos → "pacote" com chave e valor (estrutura de dados)
+
+### 🔹``Criando um Objeto:``
+```
+const usuario = {
+  nome: "Lucas",
+  idade: 25,
+  email: "lucas@email.com"
+};
+
+console.log(usuario.nome); // Lucas
+console.log(usuario["email"]); // lucas@email.com
+```
+💡 ``Numa empresa: Representar usuários, produtos, pedidos... Cada objeto representa uma entidade do sistema.``
+
+### 🔹 Adicionando / alterando propriedades
+
+```
+usuario.telefone = "1199999-9999"; // adicionar
+usuario.idade = 26; // alterar
+
+console.log(usuario);
+```
+💡 ``Numa empresa: Atualizar dados do cliente, como endereço ou telefone.``
+
+---
+
+### 🔹 Removendo propriedades
+
+```
+delete usuario.email;
+
+console.log(usuario);
+```
+💡 ``Numa empresa: Remover dados sensíveis quando não são mais necessários (por segurança ou privacidade).``
+
+### 🔹 Métodos dentro de objetos
+Funções que vivem dentro do objeto → chamadas de métodos.
+
+```
+const carro = {
+  modelo: "Fusca",
+  ligar: function() {
+    console.log("Carro ligado!");
+  }
+};
+
+carro.ligar();
+```
+💡 ``Numa empresa: Métodos para ações que pertencem ao objeto (ex: enviarEmail(), confirmarPagamento()).``
+
+## 📋 Arrays → Lista ordenada de dados (índices)
+
+### 🔹 Criando um array
+
+```
+const frutas = ["Maçã", "Banana", "Laranja"];
+
+console.log(frutas[0]); // Maçã
+console.log(frutas.length); // 3
+```
+💡 Numa empresa: Listas de produtos, clientes, pedidos, etc.
+
+### 🔹 Adicionando e removendo no array
+
+```
+frutas.push("Manga"); // adicionar no final
+frutas.pop(); // remover do final
+
+frutas.unshift("Morango"); // adicionar no início
+frutas.shift(); // remover do início
+
+console.log(frutas);
+```
+💡 Numa empresa: Carrinho de compras (adicionar/remover itens).
+
+### 🔹 Percorrendo arrays (for/forEach)
+
+```
+frutas.forEach(function(fruta, indice) {
+  console.log(`${indice + 1}: ${fruta}`);
+});
+```
+💡 Numa empresa: Mostrar lista de produtos para o cliente.
+
+### 🔹 Outras operações úteis
+```
+const numeros = [1, 2, 3, 4, 5];
+
+const dobrados = numeros.map(numero => numero * 2);
+console.log(dobrados); // [2, 4, 6, 8, 10]
+
+const pares = numeros.filter(numero => numero % 2 === 0);
+console.log(pares); // [2, 4]
+
+const somaTotal = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+console.log(somaTotal); // 15
+```
+💡 Numa empresa:
+* ``map``: gerar preço  com desconto
+* ``Filter``: mostrar apenas produtos disponivel
+* ``reduce``: Calcular o total da compra
+
+## 🎯 Exemplo Real de Objeto + Array Juntos:
+
+```
+const clientes = [
+  { nome: "Lucas", saldo: 500 },
+  { nome: "Ana", saldo: 1200 },
+  { nome: "Carlos", saldo: 300 }
+];
+
+clientes.forEach(cliente => {
+  if (cliente.saldo >= 1000) {
+    console.log(`${cliente.nome} é cliente VIP!`);
+  } else {
+    console.log(`${cliente.nome} é cliente comum.`);
+  }
+});
+```
+💡 Numa empresa: Sistema que diferencia cliente VIP de cliente comum baseado em saldo.
+
+## Resumo do Modulo 6:
+
+![modulo6](/JavaScript/resumoModulo6.png)
