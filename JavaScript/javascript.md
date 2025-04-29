@@ -710,3 +710,11 @@ clientes.forEach(cliente => {
 ## Resumo do Modulo 6:
 
 ![modulo6](/JavaScript/resumoModulo6.png)
+
+## ⚡ Observações importantes:
+
+* ``Arrays`` guardam QUALQUER tipo de dado → números, strings, objetos, funções.
+
+* ``Objetos`` são mais usados para dados COMPLEXOS.
+
+* Quase todos os sistemas de e-commerce, bancos, redes sociais usam essas estruturas o tempo todo!
