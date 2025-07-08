@@ -1,7 +1,22 @@
-# Study Repositório
+# Study README
 
 ## Proximos assuntos a serem estudado.
 
-- [x] Markdown - Arquivo de estudo
 - [ ] Comando do Basicos Terminal
+- [x] Markdown - Arquivo de estudo
 - [x] Git
+- [x] HTTP-HTTPS
+- [x] Json
+- [x] JQuery
+- [x] CRUD
+- [ ] NPM
+
+## Linguagem de marcação: 
+- [ ] HTML
+- [ ] CSS
+
+## Linguagem da programação:
+
+- [ ] PHP
+- [x] JavaScript
+- [ ] DOM
